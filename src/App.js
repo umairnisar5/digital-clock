@@ -7,6 +7,7 @@ const App = () => {
   const [ctime, setCtime] = useState(Time);
 
 
+  setInterval(UpdateTime,1000 )
 return (
  <>
  <h1> {ctime} </h1>
