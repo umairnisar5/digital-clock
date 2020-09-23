@@ -6,6 +6,11 @@ const App = () => {
 
   const [ctime, setCtime] = useState(Time);
 
+  const UpdateTime = () => {
+
+    Time = new Date().toLocaleTimeString();
+    setCtime(Time);
+  }
 
   setInterval(UpdateTime,1000 )
 return (
